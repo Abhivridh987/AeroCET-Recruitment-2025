@@ -3,14 +3,14 @@
   --primary: #ff9100;   /* Violet */
   --background: #1c002a;
   --text: #f3f3f3;
-  --text-secondary: #c2c2c2;
+  --text-secondary: #ffffff;
 }
 
 body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--background);
+  background:linear-gradient(to top left, aqua, green);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

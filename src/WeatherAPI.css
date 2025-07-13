@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+
+.frost-glass {
+    background:linear-gradient( to bottom right,rgba(255, 255, 255, 0.359),transparent); /* subtle white tint */
+    backdrop-filter: blur(20px);           /* core blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    border-radius: 16px;
+
+    
+}
+.frost-glass-main {
+    background:linear-gradient( to bottom right,rgba(216, 255, 255, 0.442),rgba(255, 255, 255, 0.359),transparent,rgba(255, 255, 255, 0.492)); /* subtle white tint */
+    backdrop-filter: blur(20px);           /* core blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    border-radius: 16px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.347);
+
+    
+    
+}
+
+.frost-glass2 {
+    background:linear-gradient(to bottom right,darkgreen,rgba(255, 255, 255, 0.466)); /* subtle white tint */
+    backdrop-filter: blur(20px);           /* core blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    border-radius: 16px;
+
+    
+}
+.frost-glass:hover,.frost-glass-main:hover,.frost-glass2:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+.weather-container{
+    height: 98vh;
+    width: 100vw;
+    padding-right: 15px;
+    display: flex;
+    transform: scale(0.7);
+    box-shadow: 1px 1px 30px white;
+
+    
+    
+
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.196),rgba(255, 255, 255, 0.212));
+}
+.main{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.main-data{
+    height: 95%;
+    width: 95%;
+
+}
+.sectiondata{
+    display: flex;
+}
+.date{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+    margin-left: 15px;
+    
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+    margin-top:10px;   
+}
+.day{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+    margin-left: 15px;
+    
+    color: white;
+    font-size: 50px;
+    width: fit-content;
+    margin-top:10px;   
+}
+.location{
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    width: 95%;
+}
+
+.location-country{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    background-color: gray;
+    padding: 7px;
+    border-radius: 10px;
+}
+.fa-solid{
+    font-size: 20px;
+}
+.region{
+    width: 50%;
+
+}
+.temperature{
+    width: 50%;
+   
+    display: flex;
+}
+.image{
+    width: 50%;
+    
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+.tempvalue{
+    width: 50%;
+    
+}
+.tempvalue div{
+    margin-left:5px;
+    height: 50%;
+}
+.main-temp{
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 70px; 
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+.heatindex{
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px; 
+    color: white;
+    text-align: left;
+}
+.climate_status, .feelslike{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: right;
+    font-size: 25px;
+    color:white;
+    margin-top: 10px;
+    width: 90%;
+}
+.other-data{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    
+}
+.stats{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 47%;
+    gap:10px;
+    margin-top: 20px;
+    background:linear-gradient(to top right, transparent,#4d4d4d);
+    padding: 10px;
+    border-radius: 15px;
+}
+.stat{
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    
+}
+.stat div{
+    margin-left: 10px;
+}
+.other-param{
+    font-size: 30px;
+    font-weight: 100;
+}
+.other-param2{
+    font-size: 30px;
+    font-weight: 100;
+}
+.air-quality{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
+    height: 35%;
+    width: 97.5%;
+    margin-top: 5%;
+        font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background:linear-gradient(to top left, lightgreen,transparent);
+    padding: 10px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 30px rgb(255, 255, 255);
+
+    
+}
+.gas div{
+    margin-left:15px;
+}
+.gas{
+    height: 100%;
+    width: 100%;
+    color: white;
+        font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.gas h2{
+    margin-left: 15px;
+}
