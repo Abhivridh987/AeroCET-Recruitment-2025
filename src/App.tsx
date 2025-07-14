@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
-import Weather from './Weather.tsx';
-import WeatherDATA from './WeatherAPI';  
-import GALLERY from './Gallery';  
+
+import WeatherDATA from './components/WeatherAPI';  
+import GALLERY from './components/Gallery';  
 
 // ✅ Home Component with buttons
 const Home: React.FC = () => {
@@ -33,7 +33,6 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<GALLERY />} />
         <Route path="/weather" element={<WeatherDATA />} />
-        <Route path="/weather2" element={<Weather />} />
       </Routes>
     </Router>
   );

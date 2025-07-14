@@ -2,16 +2,16 @@
 
 .frost-glass {
     background:linear-gradient( to bottom right,rgba(255, 255, 255, 0.359),transparent); /* subtle white tint */
-    backdrop-filter: blur(20px);           /* core blur effect */
-    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    backdrop-filter: blur(20px);           
+    -webkit-backdrop-filter: blur(10px);   
     border-radius: 16px;
 
     
 }
 .frost-glass-main {
     background:linear-gradient( to bottom right,rgba(216, 255, 255, 0.442),rgba(255, 255, 255, 0.359),transparent,rgba(255, 255, 255, 0.492)); /* subtle white tint */
-    backdrop-filter: blur(20px);           /* core blur effect */
-    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    backdrop-filter: blur(20px);         
+    -webkit-backdrop-filter: blur(10px);  
     border-radius: 16px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.347);
 
@@ -20,9 +20,9 @@
 }
 
 .frost-glass2 {
-    background:linear-gradient(to bottom right,darkgreen,rgba(255, 255, 255, 0.466)); /* subtle white tint */
-    backdrop-filter: blur(20px);           /* core blur effect */
-    -webkit-backdrop-filter: blur(10px);   /* for Safari support */
+    background:linear-gradient(to bottom right,rgba(130, 255, 130, 0.388),rgba(255, 255, 255, 0.466)); 
+    backdrop-filter: blur(20px);     
+    -webkit-backdrop-filter: blur(10px);   
     border-radius: 16px;
 
     

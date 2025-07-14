@@ -10,7 +10,7 @@ body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background:linear-gradient(to top left, aqua, green);
+  background:#1c002a;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

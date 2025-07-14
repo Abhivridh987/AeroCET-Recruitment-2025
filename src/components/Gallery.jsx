@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Gallery.css"; // optional styling
+import "./Gallery.css"; 
 
 function GALLERY() {
   const [photos, setPhotos] = useState([]);
